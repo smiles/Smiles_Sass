@@ -1,0 +1,336 @@
+﻿@import "Smiles_Blog_Menu.scss";
+/*@import "Shapes.scss";*/
+@import "Blog_Styling.scss";
+/*@import "_Helper.scss";*/
+@import "Media_Query.scss";
+@import "PxToRem.scss";
+
+$dark_steel: #5d626f;
+$mid_steel: #7e879f;
+$solid_steel: #cdd0d7;
+
+
+
+.left_blog_icon {
+    height: 3rem;
+    width: 3rem;
+    float: left;
+}
+
+.right_blog_icon {
+    height: 3rem;
+    width: 3rem;
+    float: right;
+}
+
+#content {
+    @include min_phone {
+        width: 100%;
+        float: left;
+        padding: $rem30px;
+        text-align: center;
+        border: 5px solid #cdd0d7;
+        -webkit-box-shadow: 10px 10px 5px #000000;
+        -moz-box-shadow: 10px 10px 5px #000000;
+        box-shadow: 10px 10px 5px #000000;
+        background: #5d626f;
+        background: -webkit-linear-gradient(-90deg, $dark_steel, $mid_steel, $dark_steel);
+        background: -o-linear-gradient(-90deg, $dark_steel, $mid_steel, $dark_steel);
+        background: -moz-linear-gradient(-90deg, $dark_steel, $mid_steel, $dark_steel);
+        background: linear-gradient(-90deg, $dark_steel, $mid_steel, $dark_steel);
+    }
+
+    @include min_tablet {
+        width: 70%;
+        height: 100%;
+        float: left;
+        padding: $rem30px;
+        text-align: center;
+        border: 5px solid #cdd0d7;
+        -webkit-box-shadow: 10px 10px 5px #000000;
+        -moz-box-shadow: 10px 10px 5px #000000;
+        box-shadow: 10px 10px 5px #000000;
+        background: #5d626f;
+        background: -webkit-linear-gradient(-90deg, $dark_steel, $mid_steel, $dark_steel);
+        background: -o-linear-gradient(-90deg, $dark_steel, $mid_steel, $dark_steel);
+        background: -moz-linear-gradient(-90deg, $dark_steel, $mid_steel, $dark_steel);
+        background: linear-gradient(-90deg, $dark_steel, $mid_steel, $dark_steel);
+    }
+
+    @include min_average_screen {
+        width: 70%;
+        height: 100%;
+        float: left;
+        padding: $rem30px;
+        text-align: center;
+        border: 5px solid #cdd0d7;
+        -webkit-box-shadow: 10px 10px 5px #000000;
+        -moz-box-shadow: 10px 10px 5px #000000;
+        box-shadow: 10px 10px 5px #000000;
+        background: #5d626f;
+        background: -webkit-linear-gradient(-90deg, $dark_steel, $mid_steel, $dark_steel);
+        background: -o-linear-gradient(-90deg, $dark_steel, $mid_steel, $dark_steel);
+        background: -moz-linear-gradient(-90deg, $dark_steel, $mid_steel, $dark_steel);
+        background: linear-gradient(-90deg, $dark_steel, $mid_steel, $dark_steel);
+    }
+
+    @include min_screen {
+        width: 70%;
+        height: 100%;
+        float: left;
+        padding: $rem30px;
+        text-align: center;
+        border: 5px solid #cdd0d7;
+        -webkit-box-shadow: 10px 10px 5px #000000;
+        -moz-box-shadow: 10px 10px 5px #000000;
+        box-shadow: 10px 10px 5px #000000;
+        background: #5d626f;
+        background: -webkit-linear-gradient(-90deg, $dark_steel, $mid_steel, $dark_steel);
+        background: -o-linear-gradient(-90deg, $dark_steel, $mid_steel, $dark_steel);
+        background: -moz-linear-gradient(-90deg, $dark_steel, $mid_steel, $dark_steel);
+        background: linear-gradient(-90deg, $dark_steel, $mid_steel, $dark_steel);
+    }
+}
+
+#left_position {
+    @include min_phone {
+        width: 100%;
+        height: 50px;
+        float: left;
+        border: 5px solid #cdd0d7;
+        -webkit-box-shadow: 10px 10px 5px #000000;
+        -moz-box-shadow: 10px 10px 5px #000000;
+        box-shadow: 10px 10px 5px #000000;
+        background: $solid_steel;
+        background: -webkit-radial-gradient($mid_steel 1%, $solid_steel 99%);
+        background: -o-radial-gradient($mid_steel 1%, $solid_steel 99%);
+        background: -moz-radial-gradient($mid_steel 1%, $solid_steel 99%);
+        background: radial-gradient($mid_steel 1%, $solid_steel 99%);
+    }
+
+    @include min_tablet {
+        max-width: 180px;
+        height: 100%;
+        float: left;
+        margin-right: 30px;
+        align-items: center;
+        border: 5px solid #cdd0d7;
+        -webkit-box-shadow: 10px 10px 5px #000000;
+        -moz-box-shadow: 10px 10px 5px #000000;
+        box-shadow: 10px 10px 5px #000000;
+        background: $solid_steel;
+        background: -webkit-radial-gradient($mid_steel 1%, $solid_steel 99%);
+        background: -o-radial-gradient($mid_steel 1%, $solid_steel 99%);
+        background: -moz-radial-gradient($mid_steel 1%, $solid_steel 99%);
+        background: radial-gradient($mid_steel 1%, $solid_steel 99%);
+    }
+
+    @include min_average_screen {
+        max-width: 192px;
+        height: 100%;
+        float: left;
+        margin-right: 30px;
+        align-items: center;
+        border: 5px solid #cdd0d7;
+        -webkit-box-shadow: 10px 10px 5px #000000;
+        -moz-box-shadow: 10px 10px 5px #000000;
+        box-shadow: 10px 10px 5px #000000;
+        background: $solid_steel;
+        background: -webkit-radial-gradient($mid_steel 1%, $solid_steel 99%);
+        background: -o-radial-gradient($mid_steel 1%, $solid_steel 99%);
+        background: -moz-radial-gradient($mid_steel 1%, $solid_steel 99%);
+        background: radial-gradient($mid_steel 1%, $solid_steel 99%);
+    }
+
+    @include min_screen {
+        max-width: 384px;
+        height: 100%;
+        float: left;
+        margin-right: 30px;
+        align-items: center;
+        border: 5px solid #cdd0d7;
+        -webkit-box-shadow: 10px 10px 5px #000000;
+        -moz-box-shadow: 10px 10px 5px #000000;
+        box-shadow: 10px 10px 5px #000000;
+        background: $solid_steel;
+        background: -webkit-radial-gradient($mid_steel 1%, $solid_steel 99%);
+        background: -o-radial-gradient($mid_steel 1%, $solid_steel 99%);
+        background: -moz-radial-gradient($mid_steel 1%, $solid_steel 99%);
+        background: radial-gradient($mid_steel 1%, $solid_steel 99%);
+    }
+}
+
+#smilesexp_logo {
+    @include max_tablet{
+        height: 50px;
+        width: 50px;
+        margin: 5px;
+    }
+
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+
+#smiles_twitter {
+    @include max_phone{
+        display: none;
+    }
+
+    @include max_tablet{
+        display: none;
+    }
+
+    @include min_tablet {
+        height: 600px;
+        overflow: scroll;
+    }
+
+    @include min_average_screen {
+        height: 800px;
+        overflow: scroll;
+    }
+}
+
+#bloglist {
+
+    @include min_tablet {
+        list-style-type: none;
+        margin: auto;
+        padding: 0;
+        width: 500px;
+
+        li {
+            width: 500px;
+            margin-bottom: $rem7px;
+            background-color: #000000;
+            border-radius: $rem5px;
+            -webkit-box-shadow: 4px 2px 1px #ffffff;
+            -moz-box-shadow: 4px 2px 1px #ffffff;
+            box-shadow: 4px 2px 1px #ffffff;
+        }
+
+        li a {
+            display: block;
+            color: #ffffff;
+            padding: $rem8px $rem16px;
+            text-decoration: none;
+            font-size: $rem24px;
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        }
+
+        li a:hover {
+            display: block;
+            color: #000000;
+            background-color: #ffffff;
+            padding: $rem8px $rem16px;
+            text-decoration: none;
+            font-size: $rem24px;
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        }
+    }
+
+    @include min_average_screen {
+        list-style-type: none;
+        margin: auto;
+        padding: 0;
+        width: 700px;
+
+        li {
+            width: 700px;
+            margin-bottom: $rem7px;
+            background-color: #000000;
+            border-radius: $rem5px;
+            -webkit-box-shadow: 4px 2px 1px #ffffff;
+            -moz-box-shadow: 4px 2px 1px #ffffff;
+            box-shadow: 4px 2px 1px #ffffff;
+        }
+
+        li a {
+            display: block;
+            color: #ffffff;
+            padding: $rem8px $rem16px;
+            text-decoration: none;
+            font-size: $rem32px;
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        }
+
+        li a:hover {
+            display: block;
+            color: #000000;
+            background-color: #ffffff;
+            padding: $rem8px $rem16px;
+            text-decoration: none;
+            font-size: $rem32px;
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        }
+    }
+}
+
+#title_latest{
+    
+}
+
+h1 {
+    font-size: $rem64px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #cdd0d7;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h2 {
+    font-size: $rem48px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #cdd0d7;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h3 {
+    font-size: $rem32px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #cdd0d7;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h4 {
+    font-size: $rem24px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #cdd0d7;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h5 {
+    font-size: $rem20px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #cdd0d7;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h6 {
+    font-size: $rem16px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #cdd0d7;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+p {
+    font-size: $rem24px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #cdd0d7;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+body {
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background: url("/img/light_blue_marble_01.jpg");
+}
+
+footer {
+    padding: .5rem;
+    text-align: center;
+    width: 100%;
+    float: left;
+}

@@ -1,0 +1,102 @@
+﻿$phone-width: 432px;
+$phone-height: 736px;
+
+$tablet-width: 1024px;
+$tablet-height: 1440px;
+
+$average_screen-width: 1920px;
+$average_screen-height: 1080px;
+
+$screen-width: 3840px;
+$screen-height: 2160px;
+
+@mixin min_phone {
+    @media only screen and (min-width: #{$phone-width}) {
+        @content;
+    }
+}
+
+@mixin min_tablet {
+    @media only screen and (min-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
+@mixin min_average_screen {
+    @media only screen and (min-width: #{$average_screen-width}) {
+        @content;
+    }
+}
+
+@mixin min_screen {
+    @media only screen and (min-width: #{$screen-width}) {
+        @content;
+    }
+}
+
+@mixin max_phone {
+    @media only screen and (max-width: #{$phone-width}) {
+        @content;
+    }
+}
+
+@mixin max_tablet {
+    @media only screen and (max-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
+@mixin max_average_screen {
+    @media only screen and (max-width: #{$average_screen-width}) {
+        @content;
+    }
+}
+
+@mixin max_screen {
+    @media only screen and (max-width: #{$screen-width}) {
+        @content;
+    }
+}
+
+@mixin max_phone_min {
+    @media only screen and (max-width: #{$phone-width}) and (min-width: #{0})  {
+        @content;
+    }
+}
+
+@mixin max_tablet_min {
+    @media only screen and (max-width: #{$tablet-width}) and (min-width: #{$phone-width}) {
+        @content;
+    }
+}
+
+@mixin max_average-screen_min {
+    @media only screen and (max-width: #{$average_screen-width}) and (min-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
+@mixin max_screen_min {
+    @media only screen and (max-width: #{$screen-width}) and (min-width: #{$average_screen-width}) {
+        @content;
+    }
+}
+
+@mixin min_phone_max {
+    @media only screen and (min-width: #{$phone-width}) and (max-width: #{$tablet-width}){
+        @content;
+    }
+}
+
+@mixin min_tablet_max {
+    @media only screen and (min-width: #{$tablet-width}) and (max-width: #{$average_screen-width}) {
+        @content;
+    }
+}
+
+@mixin min_average_screen_max {
+    @media only screen and (min-width: #{$average_screen-width}) and (max-width: #{$screen-width}) {
+        @content;
+    }
+}
+

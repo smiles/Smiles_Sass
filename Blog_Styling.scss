@@ -1,0 +1,14 @@
+﻿@import "PxToRem.scss";
+
+#blogtitle {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: $rem48px;
+    margin-top: $rem10px;
+    border-bottom: thick solid #cdd0d7;
+}
+
+#blogpost {
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: $rem32px;
+    margin-left: $rem28px;
+}
